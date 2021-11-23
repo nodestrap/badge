@@ -1,0 +1,43 @@
+{
+  "name": "@nodestrap/badge",
+  "version": "4.0.0",
+  "description": "Represents counters or labels.",
+  "type": "module",
+  "main": "dist/Badge.jsx",
+  "types": "dist/Badge.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodestrap/badge.git"
+  },
+  "keywords": [
+    "badge",
+    "counter",
+    "label",
+    "component",
+    "element",
+    "react",
+    "nodestrap",
+    "styled"
+  ],
+  "author": "heymarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodestrap/badge/issues"
+  },
+  "homepage": "https://github.com/nodestrap/badge#readme",
+  "dependencies": {
+    "@cssfn/css-config": "^1.0.1",
+    "@cssfn/cssfn": "^1.0.3",
+    "@cssfn/react-cssfn": "^1.0.3",
+    "@nodestrap/basic": "^4.0.2",
+    "@nodestrap/borders": "^4.0.1",
+    "@nodestrap/layouts": "^4.0.1",
+    "@nodestrap/popup": "^4.0.1",
+    "@nodestrap/typos": "^4.0.0",
+    "@types/react": "^17.0.36",
+    "react": "^17.0.2"
+  }
+}
