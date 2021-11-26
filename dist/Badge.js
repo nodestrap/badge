@@ -212,25 +212,19 @@ export function Badge(props) {
     // fn props:
     const activeFn = active ?? !!(props.children ?? false);
     // jsx:
-    return (<Popup 
-    // other props:
-    {...restProps} 
-    // semantics:
-    tag={props.tag ?? 'span'} semanticTag={props.semanticTag ?? [null]} semanticRole={props.semanticRole ?? 'status'} aria-label={props['aria-label'] ?? label} 
-    // accessibilities:
-    {...{
-        active: activeFn,
-        inheritActive: false,
-    }} 
-    // popups:
-    popupModifiers={[...defaultPopupModifiers,
+    return (React.createElement(Popup, { ...restProps, 
+        // semantics:
+        tag: props.tag ?? 'span', semanticTag: props.semanticTag ?? [null], semanticRole: props.semanticRole ?? 'status', "aria-label": props['aria-label'] ?? label, ...{
+            active: activeFn,
+            inheritActive: false,
+        }, 
+        // popups:
+        popupModifiers: [...defaultPopupModifiers,
             ...(props.popupModifiers ?? []),
-        ]} 
-    // classes:
-    mainClass={props.mainClass ?? sheet.main} variantClasses={[...(props.variantClasses ?? []),
+        ], 
+        // classes:
+        mainClass: props.mainClass ?? sheet.main, variantClasses: [...(props.variantClasses ?? []),
             badgeVariant.class,
-        ]}>
-            {props.children}
-        </Popup>);
+        ] }, props.children));
 }
 export { Badge as default };
