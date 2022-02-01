@@ -7,9 +7,9 @@ export interface BadgeVariant {
 export declare const useBadgeVariant: (props: BadgeVariant) => {
     class: BadgeStyle | null;
 };
-export declare const usesBadgeLayout: () => import("@cssfn/cssfn").StyleCollection;
-export declare const usesBadgeVariants: () => import("@cssfn/cssfn").StyleCollection;
-export declare const usesBadgeStates: () => import("@cssfn/cssfn").StyleCollection;
+export declare const usesBadgeLayout: () => import("@cssfn/cssfn").Rule;
+export declare const usesBadgeVariants: () => import("@cssfn/cssfn").Rule;
+export declare const usesBadgeStates: () => import("@cssfn/cssfn").Rule;
 export declare const useBadgeSheet: import("@cssfn/types").Factory<import("jss").Classes<"main">>;
 export declare const cssProps: import("@cssfn/css-config").Refs<{
     fontSizeSm: (string | number)[][];
