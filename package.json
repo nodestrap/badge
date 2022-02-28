@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/badge",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "Represents counters or labels.",
   "type": "module",
   "main": "dist/Badge.js",
@@ -30,14 +30,14 @@
   "homepage": "https://github.com/nodestrap/badge#readme",
   "dependencies": {
     "@cssfn/css-config": "^1.0.4",
-    "@cssfn/cssfn": "^1.0.11",
+    "@cssfn/cssfn": "^1.0.12",
     "@cssfn/react-cssfn": "^1.0.11",
     "@nodestrap/basic": "^4.0.7",
     "@nodestrap/borders": "^4.0.3",
     "@nodestrap/layouts": "^4.0.2",
     "@nodestrap/popup": "^4.0.7",
-    "@nodestrap/typos": "^4.0.4",
-    "@types/react": "^17.0.38",
+    "@nodestrap/typos": "^4.0.6",
+    "@types/react": "^17.0.39",
     "react": "^17.0.2"
   }
 }

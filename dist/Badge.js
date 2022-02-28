@@ -206,7 +206,7 @@ export function Badge(props) {
     inheritActive, // from accessibilities
     ...restProps } = props;
     // fn props:
-    const activeFn = active ?? !!(props.children ?? false);
+    const activeFn = active ?? !!(props.children ?? false); // badge has a content
     // jsx:
     return (React.createElement(Popup, { ...restProps, 
         // semantics:
@@ -218,6 +218,8 @@ export function Badge(props) {
         popupModifiers: [...defaultPopupModifiers,
             ...(props.popupModifiers ?? []),
         ], 
+        // variants:
+        mild: props.mild ?? false, 
         // classes:
         mainClass: props.mainClass ?? sheet.main, variantClasses: [...(props.variantClasses ?? []),
             badgeVariant.class,
