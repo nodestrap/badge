@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { PopupPlacement, PopupModifier, PopupPosition, PopupProps } from '@nodestrap/popup';
+import { PopupPlacement, PopupMiddleware, PopupStrategy, PopupProps } from '@nodestrap/popup';
 export declare type BadgeStyle = 'pill' | 'square' | 'circle';
 export interface BadgeVariant {
     badgeStyle?: BadgeStyle;
@@ -50,4 +50,4 @@ export interface BadgeProps<TElement extends HTMLElement = HTMLElement> extends 
 }
 export declare function Badge<TElement extends HTMLElement = HTMLElement>(props: BadgeProps<TElement>): JSX.Element;
 export { Badge as default };
-export type { PopupPlacement, PopupModifier, PopupPosition };
+export type { PopupPlacement, PopupMiddleware, PopupStrategy };

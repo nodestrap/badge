@@ -190,10 +190,6 @@ export const [cssProps, cssDecls, cssVals, cssConfig] = createCssConfig(() => {
         //#endregion spacings
     };
 }, { prefix: 'bge' });
-const defaultPopupModifiers = [
-    { name: 'flip', enabled: false },
-    { name: 'preventOverflow', enabled: false },
-];
 export function Badge(props) {
     // styles:
     const sheet = useBadgeSheet();
@@ -214,10 +210,6 @@ export function Badge(props) {
             active: activeFn,
             inheritActive: false,
         }, 
-        // popups:
-        popupModifiers: [...defaultPopupModifiers,
-            ...(props.popupModifiers ?? []),
-        ], 
         // variants:
         mild: props.mild ?? false, 
         // classes:
