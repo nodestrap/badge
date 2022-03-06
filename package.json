@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/badge",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "description": "Represents counters or labels.",
   "type": "module",
   "main": "dist/Badge.js",

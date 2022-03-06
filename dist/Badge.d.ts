@@ -18,6 +18,7 @@ export declare const cssProps: import("@cssfn/css-config").Refs<{
     paddingBlockSm: (string | number)[][];
     paddingInlineLg: (string | number)[][];
     paddingBlockLg: (string | number)[][];
+    whiteSpace: string;
     fontSize: string;
     fontWeight: import("@cssfn/css-types").Cust.Ref;
     paddingInline: string;
@@ -29,6 +30,7 @@ export declare const cssProps: import("@cssfn/css-config").Refs<{
     paddingBlockSm: (string | number)[][];
     paddingInlineLg: (string | number)[][];
     paddingBlockLg: (string | number)[][];
+    whiteSpace: string;
     fontSize: string;
     fontWeight: import("@cssfn/css-types").Cust.Ref;
     paddingInline: string;
@@ -40,6 +42,7 @@ export declare const cssProps: import("@cssfn/css-config").Refs<{
     paddingBlockSm: (string | number)[][];
     paddingInlineLg: (string | number)[][];
     paddingBlockLg: (string | number)[][];
+    whiteSpace: string;
     fontSize: string;
     fontWeight: import("@cssfn/css-types").Cust.Ref;
     paddingInline: string;

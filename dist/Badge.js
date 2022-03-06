@@ -66,7 +66,6 @@ export const usesBadgeLayout = () => {
             // typos:
             lineHeight: 1,
             textAlign: 'center',
-            whiteSpace: 'nowrap',
             // children:
             ...isEmpty({
                 /*
@@ -168,6 +167,7 @@ export const useBadgeSheet = createUseSheet(() => [
 export const [cssProps, cssDecls, cssVals, cssConfig] = createCssConfig(() => {
     const basics = {
         //#region typos
+        whiteSpace: 'normal',
         fontSize: '0.75em',
         fontWeight: typos.fontWeightBold,
         //#endregion typos
